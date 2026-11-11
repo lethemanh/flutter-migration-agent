@@ -1,0 +1,419 @@
+{
+  "schemaVersion": "1.0.0",
+  "mappings": {
+    "Layout": {
+      "reactComponent": "Layout",
+      "flutterWidget": "TwakeLayout",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "Main": {
+      "reactComponent": "Main",
+      "flutterWidget": "Expanded",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Content": {
+      "reactComponent": "Content",
+      "flutterWidget": "Padding",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Avatar": {
+      "reactComponent": "Avatar",
+      "flutterWidget": "TwakeAvatar",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "SearchBar": {
+      "reactComponent": "SearchBar",
+      "flutterWidget": "TwakeSearchBar",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "Empty": {
+      "reactComponent": "Empty",
+      "flutterWidget": "TwakeEmptyState",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "Tabs": {
+      "reactComponent": "Tabs",
+      "flutterWidget": "TwakeSegmentedTabs",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "Tab": {
+      "reactComponent": "Tab",
+      "flutterWidget": "ButtonSegment",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:flutter/material.dart"
+    },
+    "VirtualizedTable": {
+      "reactComponent": "VirtualizedTable",
+      "flutterWidget": "ListView.builder",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Sidebar": {
+      "reactComponent": "Sidebar",
+      "flutterWidget": "Drawer",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Stack": {
+      "reactComponent": "Stack",
+      "flutterWidget": "Flex",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Box": {
+      "reactComponent": "Box",
+      "flutterWidget": "Container",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Typography": {
+      "reactComponent": "Typography",
+      "flutterWidget": "Text",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Button": {
+      "reactComponent": "Button",
+      "flutterWidget": "FilledButton / TextButton",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "IconButton": {
+      "reactComponent": "IconButton",
+      "flutterWidget": "IconButton",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Fab": {
+      "reactComponent": "Fab",
+      "flutterWidget": "FloatingActionButton",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Snackbar": {
+      "reactComponent": "Snackbar",
+      "flutterWidget": "SnackBar",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Alert": {
+      "reactComponent": "Alert",
+      "flutterWidget": "MaterialBanner",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Skeleton": {
+      "reactComponent": "Skeleton",
+      "flutterWidget": "Container",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "CircularProgress": {
+      "reactComponent": "CircularProgress",
+      "flutterWidget": "CircularProgressIndicator",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Tooltip": {
+      "reactComponent": "Tooltip",
+      "flutterWidget": "Tooltip",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Chip": {
+      "reactComponent": "Chip",
+      "flutterWidget": "Chip",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Dialog": {
+      "reactComponent": "Dialog",
+      "flutterWidget": "AlertDialog",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ContactPopover": {
+      "reactComponent": "ContactPopover",
+      "flutterWidget": "TwakeContactPopover",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart",
+      "notes": "Touch opens an adaptive contact action sheet, per approved mobile decision."
+    },
+    "Fade": {
+      "reactComponent": "Fade",
+      "flutterWidget": "FadeTransition",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Paper": {
+      "reactComponent": "Paper",
+      "flutterWidget": "Card",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "List": {
+      "reactComponent": "List",
+      "flutterWidget": "ListView",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ListItem": {
+      "reactComponent": "ListItem",
+      "flutterWidget": "ListTile",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ListItemIcon": {
+      "reactComponent": "ListItemIcon",
+      "flutterWidget": "ListTile.leading",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ListItemText": {
+      "reactComponent": "ListItemText",
+      "flutterWidget": "ListTile.title",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "DialogTitle": {
+      "reactComponent": "DialogTitle",
+      "flutterWidget": "AlertDialog.title",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "DialogContent": {
+      "reactComponent": "DialogContent",
+      "flutterWidget": "AlertDialog.content",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "DialogContentText": {
+      "reactComponent": "DialogContentText",
+      "flutterWidget": "Text",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "DialogActions": {
+      "reactComponent": "DialogActions",
+      "flutterWidget": "AlertDialog.actions",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "TextField": {
+      "reactComponent": "TextField",
+      "flutterWidget": "TextField",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Select": {
+      "reactComponent": "Select",
+      "flutterWidget": "DropdownButtonFormField",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Grid": {
+      "reactComponent": "Grid",
+      "flutterWidget": "Column",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "InputAdornment": {
+      "reactComponent": "InputAdornment",
+      "flutterWidget": "InputDecoration.prefixIcon",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Menu": {
+      "reactComponent": "Menu",
+      "flutterWidget": "PopupMenuButton",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "MenuItem": {
+      "reactComponent": "MenuItem",
+      "flutterWidget": "PopupMenuItem",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Nav": {
+      "reactComponent": "Nav",
+      "flutterWidget": "ListView",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "NavDesktopDropdown": {
+      "reactComponent": "NavDesktopDropdown",
+      "flutterWidget": "ExpansionTile",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "NavIcon": {
+      "reactComponent": "NavIcon",
+      "flutterWidget": "ListTile.leading",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "NavItem": {
+      "reactComponent": "NavItem",
+      "flutterWidget": "ListTile",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "NavLink": {
+      "reactComponent": "NavLink",
+      "flutterWidget": "ListTile.onTap",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "NavText": {
+      "reactComponent": "NavText",
+      "flutterWidget": "ListTile.title",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Autocomplete": {
+      "reactComponent": "Autocomplete",
+      "flutterWidget": "Autocomplete",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "Switch": {
+      "reactComponent": "Switch",
+      "flutterWidget": "Switch",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ActionsMenu": {
+      "reactComponent": "ActionsMenu",
+      "flutterWidget": "PopupMenuButton",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ActionsMenuItem": {
+      "reactComponent": "ActionsMenuItem",
+      "flutterWidget": "PopupMenuItem",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "DialogCloseButton": {
+      "reactComponent": "DialogCloseButton",
+      "flutterWidget": "IconButton",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ListItemAvatar": {
+      "reactComponent": "ListItemAvatar",
+      "flutterWidget": "ListTile.leading",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "getInitials": {
+      "reactComponent": "getInitials",
+      "flutterWidget": "TwakeMuiCompat.getInitials",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "nameToColor": {
+      "reactComponent": "nameToColor",
+      "flutterWidget": "TwakeMuiCompat.nameToColor",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "ListSkeleton": {
+      "reactComponent": "ListSkeleton",
+      "flutterWidget": "ListView.builder with Twake skeleton rows",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "ListSubheader": {
+      "reactComponent": "ListSubheader",
+      "flutterWidget": "ListTileTheme subheader",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "NavDropdown": {
+      "reactComponent": "NavDropdown",
+      "flutterWidget": "ExpansionTile",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    },
+    "TwakeMuiThemeProvider": {
+      "reactComponent": "TwakeMuiThemeProvider",
+      "flutterWidget": "TwakeTheme.light/dark",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "implemented",
+      "importPath": "package:twake_flutter_ui/twake_flutter_ui.dart"
+    },
+    "useColorScheme": {
+      "reactComponent": "useColorScheme",
+      "flutterWidget": "Theme.of(context).brightness",
+      "sourcePackage": "@linagora/twake-mui",
+      "status": "theme-provided",
+      "importPath": "package:flutter/material.dart"
+    }
+  }
+}

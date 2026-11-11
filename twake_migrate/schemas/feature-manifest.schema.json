@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linagora.com/schemas/twake-feature-manifest.schema.json",
+  "title": "Twake Web-to-Flutter Feature Manifest",
+  "description": "Single source of truth gating all Flutter code generation from a Twake React web application.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "app",
+    "approval",
+    "twakeLibraries",
+    "routes",
+    "screens",
+    "components",
+    "flows",
+    "apiCalls",
+    "i18n"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "app": {
+      "type": "object",
+      "required": ["name", "version", "sourceRoot", "routerType", "stateManagement", "targetFlutterArchitecture"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "sourceRoot": { "type": "string" },
+        "routerType": { "type": "string" },
+        "stateManagement": { "type": "string" },
+        "targetFlutterArchitecture": {
+          "type": "object",
+          "required": ["stateManagement", "router", "folderStructure", "designPackage"],
+          "properties": {
+            "stateManagement": { "type": "string" },
+            "router": { "type": "string" },
+            "folderStructure": { "type": "string" },
+            "designPackage": { "type": "string" }
+          }
+        }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["draft", "approved"] },
+        "reviewedBy": { "type": ["string", "null"] },
+        "reviewedAt": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "twakeLibraries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["package", "versionSpec", "category", "strategy", "flutterTarget", "status"],
+        "properties": {
+          "package": { "type": "string" },
+          "versionSpec": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": ["tokens", "components", "icons", "i18n", "auth", "websocket", "utils"]
+          },
+          "strategy": {
+            "type": "string",
+            "enum": ["generate-dart-tokens", "generate-dart-icons", "convert-arb", "widget-map", "port-dart", "mobile-login-skill"]
+          },
+          "flutterTarget": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["ready", "partial", "requires-port"]
+          }
+        }
+      }
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "component", "sourceFile", "params"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^ROUTE_[A-Z0-9_]+$" },
+          "path": { "type": "string" },
+          "component": { "type": "string" },
+          "sourceFile": { "type": "string" },
+          "params": { "type": "array", "items": { "type": "string" } },
+          "parentRouteId": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "screens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "sourceFile",
+          "routeIds",
+          "childComponents",
+          "twakeMuiComponents",
+          "twakeIcons",
+          "twakeCssClasses",
+          "states",
+          "i18nKeys",
+          "hasWebMobileAdaptation"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^SCREEN_[A-Z0-9_]+$" },
+          "name": { "type": "string" },
+          "sourceFile": { "type": "string" },
+          "routeIds": { "type": "array", "items": { "type": "string" } },
+          "childComponents": { "type": "array", "items": { "type": "string" } },
+          "twakeMuiComponents": { "type": "array", "items": { "type": "string" } },
+          "twakeIcons": { "type": "array", "items": { "type": "string" } },
+          "twakeCssClasses": { "type": "array", "items": { "type": "string" } },
+          "states": { "type": "array", "items": { "type": "string" } },
+          "i18nKeys": { "type": "array", "items": { "type": "string" } },
+          "hasWebMobileAdaptation": { "type": "boolean" },
+          "mobileAdaptationNotes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "sourceFile",
+          "twakeMuiComponents",
+          "twakeIcons",
+          "twakeCssClasses",
+          "i18nKeys",
+          "usesMobileBreakpoint"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^COMP_[A-Z0-9_]+$" },
+          "name": { "type": "string" },
+          "sourceFile": { "type": "string" },
+          "twakeMuiComponents": { "type": "array", "items": { "type": "string" } },
+          "twakeIcons": { "type": "array", "items": { "type": "string" } },
+          "twakeCssClasses": { "type": "array", "items": { "type": "string" } },
+          "i18nKeys": { "type": "array", "items": { "type": "string" } },
+          "usesMobileBreakpoint": { "type": "boolean" },
+          "webOnlyRisks": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "flows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "screenId", "sourceFile", "trigger", "steps", "apiCallIds"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^FLOW_[A-Z0-9_]+$" },
+          "name": { "type": "string" },
+          "screenId": { "type": "string" },
+          "sourceFile": { "type": "string" },
+          "trigger": { "type": "string" },
+          "steps": { "type": "array", "items": { "type": "string" } },
+          "apiCallIds": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "apiCalls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "kind", "sourceFile", "operation"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^API_[A-Z0-9_]+$" },
+          "name": { "type": "string" },
+          "kind": { "type": "string", "enum": ["redux-thunk", "websocket-op", "http-call"] },
+          "sourceFile": { "type": "string" },
+          "operation": { "type": "string" }
+        }
+      }
+    },
+    "i18n": {
+      "type": "object",
+      "required": ["locales", "totalKeys", "keys"],
+      "properties": {
+        "locales": { "type": "array", "items": { "type": "string" } },
+        "totalKeys": { "type": "integer" },
+        "keys": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}
+

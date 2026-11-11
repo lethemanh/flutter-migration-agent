@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linagora.com/schemas/twake-widget-map.schema.json",
+  "title": "Twake React-to-Flutter Widget Mapping Table",
+  "description": "Fixed 1-to-1 mapping from @linagora/twake-mui components to twake_flutter_ui widgets.",
+  "type": "object",
+  "required": ["schemaVersion", "sourceVersions", "mappings"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "sourceVersions": {
+      "type": "object",
+      "required": ["twakeMui", "twakeCss", "twakeIcons"],
+      "properties": {
+        "twakeMui": { "type": "string" },
+        "twakeCss": { "type": "string" },
+        "twakeIcons": { "type": "string" }
+      }
+    },
+    "mappings": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["reactComponent", "flutterWidget", "sourcePackage", "status", "importPath"],
+        "properties": {
+          "reactComponent": { "type": "string" },
+          "flutterWidget": { "type": "string" },
+          "sourcePackage": { "type": "string" },
+          "status": { "type": "string", "enum": ["implemented", "theme-provided", "hook-equivalent", "unimplemented"] },
+          "importPath": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
+

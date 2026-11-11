@@ -1,0 +1,297 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linagora.com/schemas/twake-migration-plan.schema.json",
+  "title": "Twake Web-to-Flutter Migration Plan",
+  "description": "Pre-migration report and phased execution plan generated after discovery and required before porting any Flutter code.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "app",
+    "approval",
+    "discoveredFeaturesSummary",
+    "twakeLibrariesReport",
+    "waves"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "app": {
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "sourceRoot",
+        "targetFlutterPackage"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "sourceRoot": {
+          "type": "string"
+        },
+        "targetFlutterPackage": {
+          "type": "string"
+        }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending-review",
+            "approved"
+          ]
+        },
+        "reviewedBy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "discoveredFeaturesSummary": {
+      "type": "object",
+      "required": [
+        "counts",
+        "screens",
+        "routes",
+        "flows",
+        "apiCalls",
+        "i18n"
+      ],
+      "properties": {
+        "counts": {
+          "type": "object",
+          "required": [
+            "routes",
+            "screens",
+            "components",
+            "flows",
+            "apiCalls",
+            "locales",
+            "i18nKeys",
+            "resolvedMobileGaps",
+            "unresolvedMobileGaps"
+          ],
+          "properties": {
+            "routes": {
+              "type": "integer"
+            },
+            "screens": {
+              "type": "integer"
+            },
+            "components": {
+              "type": "integer"
+            },
+            "flows": {
+              "type": "integer"
+            },
+            "apiCalls": {
+              "type": "integer"
+            },
+            "locales": {
+              "type": "integer"
+            },
+            "i18nKeys": {
+              "type": "integer"
+            },
+            "resolvedMobileGaps": {
+              "type": "integer"
+            },
+            "unresolvedMobileGaps": {
+              "type": "integer"
+            }
+          }
+        },
+        "screens": {
+          "type": "array"
+        },
+        "routes": {
+          "type": "array"
+        },
+        "flows": {
+          "type": "array"
+        },
+        "apiCalls": {
+          "type": "array"
+        },
+        "i18n": {
+          "type": "object"
+        }
+      }
+    },
+    "twakeLibrariesReport": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "package",
+          "versionSpec",
+          "category",
+          "strategy",
+          "flutterTarget",
+          "usedSymbolsCount",
+          "usedSymbols",
+          "unmappedSymbols",
+          "status"
+        ],
+        "properties": {
+          "package": {
+            "type": "string"
+          },
+          "versionSpec": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "strategy": {
+            "type": "string"
+          },
+          "flutterTarget": {
+            "type": "string"
+          },
+          "usedSymbolsCount": {
+            "type": "integer"
+          },
+          "usedSymbols": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unmappedSymbols": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "requires-widget-or-decision",
+              "requires-port"
+            ]
+          }
+        }
+      }
+    },
+    "waves": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "waveNumber",
+          "id",
+          "title",
+          "goal",
+          "status",
+          "steps"
+        ],
+        "properties": {
+          "waveNumber": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "blocked-by-gaps",
+              "blocked-by-components"
+            ]
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "stepId",
+                "title",
+                "manifestIds",
+                "sourceFiles",
+                "targetFlutterFile",
+                "twakeDependencies",
+                "mobileStrategy",
+                "blockingGaps",
+                "status"
+              ],
+              "properties": {
+                "stepId": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "manifestIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sourceFiles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "targetFlutterFile": {
+                  "type": "string"
+                },
+                "twakeDependencies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "mobileStrategy": {
+                  "type": "string"
+                },
+                "blockingGaps": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "ready",
+                    "blocked"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

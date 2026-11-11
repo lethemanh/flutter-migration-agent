@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "webRoot": "/Users/lethemanh/Codes/twake-contacts-frontend",
+  "mobileRoot": "/Users/lethemanh/Codes/twake-contacts-mobile-v2",
+  "dependencyRoot": "cache/design-dependencies",
+  "librarySources": {
+    "@linagora/twake-mui": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-mui",
+    "@linagora/twake-css": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-css",
+    "@linagora/twake-icons": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-icons",
+    "@linagora/twake-utils": "/Users/lethemanh/Codes/twake-ts-utils",
+    "@linagora/twake-bar": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-bar",
+    "@linagora/twake-sdk": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-sdk",
+    "@linagora/twake-oidc": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-oidc",
+    "@linagora/twake-websocket": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/@linagora/twake-websocket",
+    "twake-i18n": "/Users/lethemanh/Codes/twake-contacts-frontend/node_modules/twake-i18n"
+  },
+  "lastMigratedCommit": null,
+  "sourceAliases": {
+    "@common": "/Users/lethemanh/Codes/twake-contacts-frontend/common/src",
+    "@injected": "/Users/lethemanh/Codes/twake-contacts-frontend/common/src",
+    "@": "/Users/lethemanh/Codes/twake-contacts-frontend/apps/private/src"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "package": "@linagora/twake-css",
+    "category": "tokens",
+    "strategy": "generate-dart-tokens",
+    "flutterTarget": "package:twake_flutter_ui/twake_flutter_ui.dart (TwakePalette, TwakeSpacing, TwakeRadius)",
+    "status": "ready"
+  },
+  {
+    "package": "@linagora/twake-mui",
+    "category": "components",
+    "strategy": "widget-map",
+    "flutterTarget": "package:twake_flutter_ui/twake_flutter_ui.dart",
+    "status": "ready"
+  },
+  {
+    "package": "@linagora/twake-icons",
+    "category": "icons",
+    "strategy": "generate-dart-icons",
+    "flutterTarget": "package:twake_flutter_ui/twake_flutter_ui.dart (TwakeIcons)",
+    "status": "ready"
+  },
+  {
+    "package": "twake-i18n",
+    "category": "i18n",
+    "strategy": "convert-arb",
+    "flutterTarget": "package:twake_flutter_ui/twake_flutter_ui.dart (TwakeI18n + ARB)",
+    "status": "ready"
+  },
+  {
+    "package": "@linagora/twake-oidc",
+    "category": "auth",
+    "strategy": "port-dart",
+    "flutterTarget": "Authentication/session implementation specified by the selected app's SKILL.md after source tracing",
+    "status": "requires-port"
+  },
+  {
+    "package": "@linagora/twake-utils",
+    "category": "utils",
+    "strategy": "port-dart",
+    "flutterTarget": "package:twake_flutter_ui/twake_flutter_ui.dart (TwakeUtils)",
+    "status": "ready"
+  },
+  {
+    "package": "@linagora/twake-websocket",
+    "category": "websocket",
+    "strategy": "port-dart",
+    "flutterTarget": "lib/core/websocket/twake_websocket_client.dart",
+    "status": "requires-port"
+  },
+  {
+    "package": "cozy-external-bridge",
+    "category": "utils",
+    "strategy": "port-dart",
+    "flutterTarget": "Not needed in a standalone native app (web iframe bridge)",
+    "status": "ready"
+  }
+]

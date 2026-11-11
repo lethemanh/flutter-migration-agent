@@ -1,0 +1,86 @@
+{
+  "at": "2026-11-09T10:25:26.942579Z",
+  "state": "stopped",
+  "reason": "Migration CLI exited with status 0; exit is not migration completion",
+  "nextAction": "Read artifacts/discovery-20261109-current/callback-path-decision.json and candidate-dispositions.json; correct eight helper/nonvisual/unused machine mappings, rerun affected feature gates, then continue session/routing and independent approved features using /callback. Do not invent absolute return URI or platform associations.",
+  "featureId": "ROUTE_CALLBACK",
+  "history": [
+    {
+      "at": "2026-11-04T15:17:22.614577Z",
+      "state": "running",
+      "reason": "Migration session launched",
+      "nextAction": "Read app workspace and continue approved work",
+      "featureId": null
+    },
+    {
+      "at": "2026-11-04T15:39:26.772276Z",
+      "state": "running",
+      "reason": "Rebuilt missing source evidence: 506 dispositions, 1593 contextual calls, 52 library sources; isolated original app bootstrap light/dark passed; rebuilding route/action captures",
+      "nextAction": "Continue recovery-20261104-current fixture_runtime.py probes; generate asserted runtime-capture-plan from observed controls and run toolkit discover-runtime before feature gating",
+      "featureId": null
+    },
+    {
+      "at": "2026-11-04T15:56:08.378290Z",
+      "state": "blocked",
+      "reason": "Recovery plan handoff: source reconciliation passes and all seven original screens captured, but discovery gate requires 190 remaining both-theme action IDs and guarded-callback dispositions; native browser-return registration also remains unspecified. Existing scope approval preserved.",
+      "nextAction": "Resume artifacts/recovery-20261104-current/plan-handoff.md; extend fixture_runtime.py only for missing search/form/book/share/import/socket/notification and permission/retry cases, merge current asserted evidence, reconcile inactive guards, then regenerate plan and apply prior approval when discovery gates pass.",
+      "featureId": "ROUTE_CONTACTS"
+    },
+    {
+      "at": "2026-11-04T15:59:01.126859Z",
+      "state": "running",
+      "reason": "Resume missing action evidence; no new approval needed for unchanged scope",
+      "nextAction": "Implement and run disposable address-book create/rename/delete success/error/cancel cases in both themes, then merge source-linked observations",
+      "featureId": "ROUTE_CONTACTS"
+    },
+    {
+      "at": "2026-11-04T17:07:21.998437Z",
+      "state": "stopped",
+      "reason": "Migration CLI exited with status 0; exit is not migration completion",
+      "nextAction": "Implement and run disposable address-book create/rename/delete success/error/cancel cases in both themes, then merge source-linked observations",
+      "featureId": "ROUTE_CONTACTS"
+    },
+    {
+      "at": "2026-11-05T16:30:01.306464Z",
+      "state": "running",
+      "reason": "Migration session launched",
+      "nextAction": "Implement and run disposable address-book create/rename/delete success/error/cancel cases in both themes, then merge source-linked observations",
+      "featureId": "ROUTE_CONTACTS"
+    },
+    {
+      "at": "2026-11-06T06:40:08.028913Z",
+      "state": "running",
+      "reason": "Requested Contacts dev server running at localhost:5000; HTTP 200 and synthetic loaded-contact light/dark bootstrap passed. Export Save file picker decision persisted; source advanced to fa8e9ef and historical discovery remains stale.",
+      "nextAction": "Refresh static discovery in a new artifacts directory for fa8e9ef; reuse only unchanged reviewed source, retain approved mobile decisions, reconcile new vCard export and changed dependencies, then capture current asserted runtime evidence and regenerate the plan.",
+      "featureId": "ROUTE_CONTACTS"
+    },
+    {
+      "at": "2026-11-06T06:59:13.953672Z",
+      "state": "needs-user",
+      "reason": "Current global source/action discovery passes. New contact/book vCard export scope requires focused review under migration rules; prior approval and selected Save file picker behavior preserved. No native files changed.",
+      "nextAction": "Read artifacts/discovery-20261106-current/plan-handoff.md; obtain approval only for adding contact/book vCard export to the existing plan, then reconcile eight individual helper mappings, regenerate target Twake UI and feature-gate approved implementation. Native auth awaits registered return URI.",
+      "featureId": "COMP_CONTACT_ROW_ACTIONS"
+    },
+    {
+      "at": "2026-11-09T09:45:21.219157Z",
+      "state": "needs-user",
+      "reason": "Current source/runtime discovery complete and export approval retained; regenerated native UI and fixed DELETE URI with 39 tests/analyze passing. Native session repair requires full registered return URI; development harness still reports eight explicitly reviewed helper mappings.",
+      "nextAction": "Read artifacts/discovery-20261109-current/plan-handoff.md and candidate-dispositions.json; obtain exact SSO-registered native return URI or confirmation only web redirect exists, correct eight machine mappings, then feature-gate session/routing and remaining approved work. Do not repeat completed discovery or claim parity.",
+      "featureId": "ROUTE_CALLBACK"
+    },
+    {
+      "at": "2026-11-09T09:46:56.994047Z",
+      "state": "running",
+      "reason": "User confirms no registered URI and selects existing /callback path; decision persisted. Continue approved migration without reasking for registration; live native SSO remains unverified.",
+      "nextAction": "Read artifacts/discovery-20261109-current/callback-path-decision.json and candidate-dispositions.json; correct eight helper/nonvisual/unused machine mappings, rerun affected feature gates, then continue session/routing and independent approved features using /callback. Do not invent absolute return URI or platform associations.",
+      "featureId": "ROUTE_CALLBACK"
+    },
+    {
+      "at": "2026-11-09T10:25:26.942579Z",
+      "state": "stopped",
+      "reason": "Migration CLI exited with status 0; exit is not migration completion",
+      "nextAction": "Read artifacts/discovery-20261109-current/callback-path-decision.json and candidate-dispositions.json; correct eight helper/nonvisual/unused machine mappings, rerun affected feature gates, then continue session/routing and independent approved features using /callback. Do not invent absolute return URI or platform associations.",
+      "featureId": "ROUTE_CALLBACK"
+    }
+  ]
+}

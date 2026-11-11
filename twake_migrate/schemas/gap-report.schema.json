@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linagora.com/schemas/twake-gap-report.schema.json",
+  "title": "Twake Web-to-Flutter Gap Report",
+  "description": "Tracks web-only patterns (hover, right-click, wide tables, missing mobile view) and unmapped components that require explicit user decision.",
+  "type": "object",
+  "required": ["schemaVersion", "app", "gaps"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "app": { "type": "string" },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "manifestRef",
+          "sourceFile",
+          "category",
+          "description",
+          "webHasMobileView",
+          "status",
+          "resolution"
+        ],
+        "properties": {
+          "id": { "type": "string", "pattern": "^GAP_[A-Z0-9_]+$" },
+          "manifestRef": { "type": "string" },
+          "sourceFile": { "type": "string" },
+          "category": {
+            "type": "string",
+            "enum": [
+              "hover-only-interaction",
+              "desktop-popover",
+              "wide-table",
+              "missing-twake-flutter-widget",
+              "browser-specific-api",
+              "context-menu"
+            ]
+          },
+          "description": { "type": "string" },
+          "webHasMobileView": { "type": "boolean" },
+          "webMobileAlternative": { "type": ["string", "null"] },
+          "status": {
+            "type": "string",
+            "enum": ["resolved-by-web-mobile-view", "unresolved-ask-user", "resolved-by-user"]
+          },
+          "resolution": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}
+

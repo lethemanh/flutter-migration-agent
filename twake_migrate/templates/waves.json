@@ -1,0 +1,85 @@
+[
+  {
+    "waveNumber": 0,
+    "id": "WAVE_0",
+    "title": "Wave 0 — Design system and service foundations",
+    "goal": "Generate lock-matched shared UI and implement source-discovered service interfaces.",
+    "status": "ready",
+    "steps": [
+      {
+        "stepId": "STEP_0_1_TWAKE_TOKENS_AND_THEME",
+        "title": "Generate source-derived palette, typography, spacing, radii and effective themes",
+        "manifestIds": [],
+        "sourceFiles": [
+          "package.json"
+        ],
+        "targetFlutterFile": "packages/twake_flutter_ui/lib/src/theme/twake_theme.dart",
+        "twakeDependencies": [],
+        "mobileStrategy": "Use resolved locked source values; review rendered original UI states.",
+        "blockingGaps": [],
+        "status": "ready"
+      },
+      {
+        "stepId": "STEP_0_2_TWAKE_ICONS_AND_I18N",
+        "title": "Generate the locked icon inventory and discovered locales/keys",
+        "manifestIds": [],
+        "sourceFiles": [
+          "package.json"
+        ],
+        "targetFlutterFile": "packages/twake_flutter_ui/lib/src/l10n/twake_i18n.dart",
+        "twakeDependencies": [],
+        "mobileStrategy": "Use resolved locked source values; review rendered original UI states.",
+        "blockingGaps": [],
+        "status": "ready"
+      }
+    ]
+  },
+  {
+    "waveNumber": 1,
+    "id": "WAVE_1",
+    "title": "Wave 1 — Application routing and startup",
+    "goal": "Port discovered routes and source-backed authentication/startup behavior.",
+    "status": "ready",
+    "steps": []
+  },
+  {
+    "waveNumber": 2,
+    "id": "WAVE_2",
+    "title": "Wave 2 — Shared components",
+    "goal": "Port source-discovered reusable components and their original UI states.",
+    "status": "ready",
+    "steps": []
+  },
+  {
+    "waveNumber": 3,
+    "id": "WAVE_3",
+    "title": "Wave 3 — Screens and data presentation",
+    "goal": "Port discovered screens with their real state and data-loading behavior.",
+    "status": "ready",
+    "steps": []
+  },
+  {
+    "waveNumber": 4,
+    "id": "WAVE_4",
+    "title": "Wave 4 — Actions and state transitions",
+    "goal": "Implement every reviewed action, form and menu behavior traced from source.",
+    "status": "ready",
+    "steps": []
+  },
+  {
+    "waveNumber": 5,
+    "id": "WAVE_5",
+    "title": "Wave 5 — Library and cross-feature integrations",
+    "goal": "Preserve discovered external-library and cross-feature behavior.",
+    "status": "ready",
+    "steps": []
+  },
+  {
+    "waveNumber": 6,
+    "id": "WAVE_6",
+    "title": "Wave 6 — Behavior and visual verification",
+    "goal": "Verify every approved feature, action, screen and relevant interaction state.",
+    "status": "ready",
+    "steps": []
+  }
+]

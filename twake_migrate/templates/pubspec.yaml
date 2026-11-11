@@ -1,0 +1,21 @@
+name: twake_flutter_ui
+description: Generated Twake Design System, Icons, Components, and i18n for Flutter.
+version: {{ mui_version }}
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.10
+
+flutter:
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter.ttf
+  assets:
+    - assets/fonts/OFL.txt
+    - assets/icons/ui/
+    - assets/icons/illus/
